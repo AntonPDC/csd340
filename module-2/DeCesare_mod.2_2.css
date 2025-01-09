@@ -1,0 +1,58 @@
+/* Set global font size */
+html,
+body {
+  font-size: 16px;
+}
+
+/* Styling for h1 */
+h1 {
+  font-weight: 700; /* Bold weight */
+  text-transform: uppercase; /* Uppercase text */
+  text-align: center; /* Center align */
+}
+
+/* Styling for h2 */
+h2 {
+  font-weight: 500; /* Medium weight */
+  text-align: left; /* Left align */
+  padding-top: 15px; /* Add top padding */
+}
+
+/* Styling for paragraphs */
+p {
+  font-weight: 400; /* Regular weight */
+  line-height: 1.4em; /* Line height */
+}
+
+/* Styling for the intro paragraph */
+.intro {
+  text-indent: 2em; /* Indent first line */
+}
+
+/* Styling for the emphasized sentence */
+.sentence {
+  font-style: italic; /* Italics for sentence */
+}
+
+/* Styling for the address */
+address {
+  text-align: center; /* Center the text */
+}
+
+/* Website URL Styling */
+address a {
+  font-weight: bold; /* Bold the link */
+  font-size: 1.25em; /* Increase font size */
+  color: #4f3674; /* Set custom color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover and Visited Pseudo Classes */
+address a:hover {
+  text-decoration: underline; /* Add underline */
+  background-color: #d6a800; /* Add yellow background */
+}
+
+address a:visited {
+  color: #7a52a1; /* Custom color for visited links */
+}
