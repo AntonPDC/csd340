@@ -1,0 +1,69 @@
+/* Center the h1 title on the page */
+h1 {
+  text-align: center;
+}
+
+/* Use flexbox to align the side-by-side divs */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Set the width of both left and right boxes to 45% */
+.left-box,
+.right-box {
+  width: 45%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* Add a solid red border to the left box */
+.left-box {
+  border: 1px solid red;
+}
+
+/* Add a dashed red border to the right box */
+.right-box {
+  border: 1px dashed red;
+}
+
+/* Set the weight of the h3 tags to 500 */
+h3 {
+  font-weight: 500;
+}
+
+/* Set the weight of the lists to 300 */
+ol,
+ul {
+  font-weight: 300;
+}
+
+/* Add padding to the ordered and unordered lists */
+ol {
+  padding: 10px;
+  list-style-position: inside; /* Numbers inside the border */
+}
+
+/* Add padding to the unordered list */
+ul {
+  padding: 10px;
+  list-style-type: upper-roman; /* Roman numerals */
+  list-style-position: inside;
+}
+
+/* Hover effect for links */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style for the last div with the link */
+.bottom {
+  width: 100%;
+  margin-top: 60%;
+}
+
+/* Align the link to the right */
+.bottom a {
+  float: right;
+  margin-bottom: 20px;
+}
