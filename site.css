@@ -1,0 +1,43 @@
+/* Google Font Kit */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* General Settings */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background color */
+  color: #333; /* General font color */
+}
+
+/* Container Styling */
+#container {
+  margin: 50px 100px;
+}
+
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4 {
+  background-color: #4f3674; /* Example dark purple background */
+  color: #ffffff; /* White text for contrast */
+  border: 1px solid #d6a800; /* Gold border */
+  padding: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Anchor Tag Styles */
+a {
+  color: #4f3674; /* Matches the color scheme */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d6a800; /* Gold for hover */
+}
+
+a:visited {
+  color: #a38bc6; /* Light purple for visited links */
+}
