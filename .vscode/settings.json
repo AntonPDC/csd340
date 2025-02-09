@@ -1,4 +1,5 @@
 {
   "cSpell.words": ["Galvin"],
-  "djlint.showInstallError": false
+  "djlint.showInstallError": false,
+  "liveServer.settings.port": 5501
 }
