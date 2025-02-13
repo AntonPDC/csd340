@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Anton DeCesare" />
+    <meta name="description" content="Assignment 9.3: JavaScript - Part 1" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Bellevue University, Assignment"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+      // JavaScript variables for span replacement
+      let word1 = "basketball";
+      let word2 = "computers";
+      let word3 = "mountains";
+      let word4 = "family";
+
+      function replaceText(spanId, word) {
+        document.getElementById(spanId).textContent = word;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Assignment 9.3: JavaScript - Part 1</h1>
+      <h2>Chapter Title: Introduction to Anton DeCesare</h2>
+
+      <p class="intro">
+        I was born and raised in Columbia, Maryland, a small suburb known for
+        its beautiful landscapes and friendly community. Growing up, I spent my
+        days exploring nature and playing with friends. One of my fondest
+        memories is visiting the local library, where I discovered my love for
+        books.
+      </p>
+
+      <p>
+        Thanks to my siblings and neighborhood friends, my childhood was filled
+        with adventures. We loved to play <span id="span1">________</span>,
+        build forts, and ride our bikes around town.
+        <button onclick="replaceText('span1', word1)">Reveal Word</button>
+      </p>
+
+      <p>
+        In my free time, I enjoy several hobbies, including gaming, coding, and
+        working with <span id="span2">________</span>.
+        <button onclick="replaceText('span2', word2)">Reveal Word</button>
+      </p>
+
+      <p>
+        One of my favorite places to visit is the
+        <span id="span3">________</span>, where I can relax and enjoy the fresh
+        air.
+        <button onclick="replaceText('span3', word3)">Reveal Word</button>
+      </p>
+
+      <p>
+        Family has always been an important part of my life. I have a wife and a
+        daughter, with another one due on Monday, January 13th, 2025. I am/was
+        also close to my <span id="span4">________</span> while I was growing
+        up.
+        <button onclick="replaceText('span4', word4)">Reveal Word</button>
+      </p>
+
+      <hr />
+
+      <address>
+        <p>
+          <a href="https://www.bellevue.edu" target="_blank">
+            Bellevue University
+          </a>
+        </p>
+        <p>1000 Galvin Road South</p>
+        <p>Bellevue, NE 68005</p>
+      </address>
+    </div>
+  </body>
+</html>
