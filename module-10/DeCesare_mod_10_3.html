@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Images to Change</title>
+  </head>
+  <body>
+    <h1>Click an Image to Change It</h1>
+
+    <!-- Three images that can be clicked to change -->
+    <img
+      id="img1"
+      src="https://picsum.photos/200/300?random=1"
+      alt="Random Image 1"
+    />
+    <img
+      id="img2"
+      src="https://picsum.photos/200/300?random=2"
+      alt="Random Image 2"
+    />
+    <img
+      id="img3"
+      src="https://picsum.photos/200/300?random=3"
+      alt="Random Image 3"
+    />
+
+    <script>
+      // Function to change image source
+      function changeImage(event) {
+        event.target.src =
+          "https://picsum.photos/200/300?random=" + Math.random();
+      }
+
+      // Add event listeners to all images
+      document.getElementById("img1").addEventListener("click", changeImage);
+      document.getElementById("img2").addEventListener("click", changeImage);
+      document.getElementById("img3").addEventListener("click", changeImage);
+    </script>
+  </body>
+</html>
