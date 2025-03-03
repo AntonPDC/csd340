@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+  </head>
+  <body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <!-- Input box for user to type -->
+    <input id="textBox" type="text" />
+
+    <!-- Buttons to add, delete last entry, and display the list -->
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="showItems()">Display</button>
+
+    <!-- List container where the array items will be displayed -->
+    <ul id="list"></ul>
+
+    <script>
+      // Declare an empty array to store items
+      var myArray = [];
+
+      // Function to add an item to the array
+      function addItem() {
+        // Get the value from the input box
+        var input = document.getElementById("textBox").value;
+
+        // If the input is not empty, add it to the array
+        if (input !== "") {
+          myArray.push(input); // Add to array
+          alert("Added: " + input); // Show what was added
+          document.getElementById("textBox").value = ""; // Clear input box
+        } else {
+          alert("Enter something!"); // Warn if empty input
+        }
+      }
+
+      // Function to delete the last item from the array
+      function deleteLast() {
+        // Check if there are items in the array
+        if (myArray.length > 0) {
+          alert("Deleted: " + myArray.pop()); // Remove last item and show alert
+        } else {
+          alert("Nothing to delete."); // Warn if array is empty
+        }
+      }
+
+      // Function to display all items in the array
+      function showItems() {
+        // Get the unordered list element
+        var list = document.getElementById("list");
+        list.innerHTML = ""; // Clear the list before displaying
+
+        // If the array is empty, alert the user
+        if (myArray.length === 0) {
+          alert("No items in list.");
+          return; // Exit function
+        }
+
+        // Loop through the array and create a list item for each entry
+        for (var i = 0; i < myArray.length; i++) {
+          var li = document.createElement("li"); // Create new list item
+          li.innerHTML = i + 1 + ". " + myArray[i]; // Display with number
+          list.appendChild(li); // Add to the list
+        }
+      }
+    </script>
+  </body>
+</html>
