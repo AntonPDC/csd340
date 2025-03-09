@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Anton DeCesare" />
+    <title>CSD 340 Web Development with HTML and CSS</title>
+  </head>
+  <body>
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+    <button onclick="showAscending()">Top to Bottom</button>
+    <button onclick="showDescending()">Bottom to Top</button>
+
+    <ul id="list"></ul>
+
+    <script>
+      // List of books
+      var books = [
+        "1984",
+        "To Kill a Mockingbird",
+        "The Great Gatsby",
+        "Pride and Prejudice",
+        "The Catcher in the Rye",
+        "The Hobbit",
+        "Moby-Dick",
+        "War and Peace",
+        "Brave New World",
+        "Crime and Punishment",
+      ];
+
+      function showAscending() {
+        var bookList = document.getElementById("list");
+        bookList.innerHTML = ""; // Clear the list
+
+        var sortedBooks = books.slice(); // Copy array
+        sortedBooks.sort(); // Sort in order
+
+        for (var i = 0; i < sortedBooks.length; i++) {
+          var item = document.createElement("li");
+          item.innerHTML = sortedBooks[i];
+          bookList.appendChild(item);
+        }
+      }
+
+      function showDescending() {
+        var bookList = document.getElementById("list");
+        bookList.innerHTML = ""; // Clear the list
+
+        var sortedBooks = books.slice(); // Copy array
+        sortedBooks.sort();
+        sortedBooks.reverse(); // Reverse order
+
+        for (var i = 0; i < sortedBooks.length; i++) {
+          var item = document.createElement("li");
+          item.innerHTML = sortedBooks[i];
+          bookList.appendChild(item);
+        }
+      }
+    </script>
+  </body>
+</html>
